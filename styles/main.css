@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background: #171717;
+}
+
+.main-grid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-grid {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+      grid-template-areas: "a b c d" "n o o e" "m o o f" "l i h g";
+}
+
+.main-grid div {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  background: #66ff73;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-animation: fade-in 1s ease-in-out backwards;
+          animation: fade-in 1s ease-in-out backwards;
+}
+
+.main-grid div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+}
+
+.main-grid div:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  -webkit-animation-delay: calc(1 * 100ms);
+          animation-delay: calc(1 * 100ms);
+}
+
+.main-grid div:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+  -webkit-animation-delay: calc(2 * 100ms);
+          animation-delay: calc(2 * 100ms);
+}
+
+.main-grid div:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+  -webkit-animation-delay: calc(3 * 100ms);
+          animation-delay: calc(3 * 100ms);
+}
+
+.main-grid div:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: d;
+  -webkit-animation-delay: calc(4 * 100ms);
+          animation-delay: calc(4 * 100ms);
+}
+
+.main-grid div:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: e;
+  -webkit-animation-delay: calc(5 * 100ms);
+          animation-delay: calc(5 * 100ms);
+}
+
+.main-grid div:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: f;
+  -webkit-animation-delay: calc(6 * 100ms);
+          animation-delay: calc(6 * 100ms);
+}
+
+.main-grid div:nth-child(7) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: g;
+  -webkit-animation-delay: calc(7 * 100ms);
+          animation-delay: calc(7 * 100ms);
+}
+
+.main-grid div:nth-child(8) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: h;
+  -webkit-animation-delay: calc(8 * 100ms);
+          animation-delay: calc(8 * 100ms);
+}
+
+.main-grid div:nth-child(9) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: i;
+  -webkit-animation-delay: calc(9 * 100ms);
+          animation-delay: calc(9 * 100ms);
+}
+
+.main-grid div:nth-child(10) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: l;
+  -webkit-animation-delay: calc(10 * 100ms);
+          animation-delay: calc(10 * 100ms);
+}
+
+.main-grid div:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: m;
+  -webkit-animation-delay: calc(11 * 100ms);
+          animation-delay: calc(11 * 100ms);
+}
+
+.main-grid div:nth-child(12) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: n;
+  -webkit-animation-delay: calc(12 * 100ms);
+          animation-delay: calc(12 * 100ms);
+}
+
+.main-grid div:last-child {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: o;
+  -webkit-animation-delay: calc(13 * 100ms);
+          animation-delay: calc(13 * 100ms);
+}
+/*# sourceMappingURL=main.css.map */
